@@ -1,0 +1,224 @@
+@import url('https://fonts.google.com/');
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(0, 64, 66);
+}
+
+.container,
+ .container-2
+ {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    background: #fff;
+    margin: 50px;
+    padding: 30px;
+}
+
+.container .imgbx{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: #84da89;
+}
+
+.container-2 .imgbx-2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: #0d59cc;
+}
+
+.container .imgbx::before{
+    content: 'Nike';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000;
+    opacity: .13;
+    font-size: 8em;
+    font-weight: 800;
+}
+.container-2 .imgbx-2::before{
+    content: 'Nike';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000;
+    opacity: .13;
+    font-size: 8em;
+    font-weight: 800;
+}
+
+.container .imgbx .img{
+    position: relative;
+    width: 660px;
+    transform: rotate(-30deg);
+    left: -35px;
+}
+.container-2 .imgbx-2 .img-2{
+    position: relative;
+    width: 800px;
+    transform: rotate(-30deg);
+    left: -35px;
+}
+
+.container .details,
+.container-2 .details-2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.container .details h2,
+.container-2 .details-2 h2
+{
+    margin: 0;
+    padding: 0 0 20px 0;
+    font-size: 2.3em;
+    line-height: .8em;
+    color: #444;
+}
+
+.container .details p,
+.container-2 .details-2 p
+{
+    max-width: 85%;
+    margin-left: 6%;
+    color: #333;
+    font-size: 17.5px;
+}
+
+.container .details h3,
+.container-2 .details-2 h3
+{
+    margin: 0;
+    padding: 0;
+    font-size: 2.8em;
+    color: #a2a2a2;
+    float: left;
+}
+
+.container .details a{
+    background: #017c39;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 30px;
+    float: right;
+    cursor: pointer;
+}
+.container .details a:hover{
+    background: #fff;
+    color: #017c39;
+    border: 1px solid #017c39;
+}
+
+.container-2 .details-2 a{
+    background: #041472;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 30px;
+    float: right;
+    cursor: pointer;
+}
+.container-2 .details-2 a:hover{
+    background: #fff;
+    color: #041472;
+    border: 1px solid #041472;
+}
+
+
+@media (max-width: 1080px){
+    .container, .container-2{
+        height: auto;
+        width: 70%;
+    }
+    .container .imgbx, .container-2 .imgbx-2{
+        padding: 40px;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .container .imgbx::before{
+        font-size: 6.5em;
+    }
+    
+    .container .imgbx .img, .container-2 .imgbx-2 .img-2{
+        left: initial;
+        max-width: 100%;
+        transform: rotate(0deg);
+        padding-bottom: 0px;
+    }
+
+    .details, .details-2{
+        width: 100% !important;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container .details p, .container-2 .details-2 p{
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+
+    .container-2 .imgbx-2::before{
+        font-size: 6.5em;
+    }
+    
+}
+
+@media (max-width: 900px){
+    .container, .container-2{
+        height: auto;
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 650px){
+    .container, .container-2{
+        height: auto;
+        width: 60%;
+    }
+
+}
